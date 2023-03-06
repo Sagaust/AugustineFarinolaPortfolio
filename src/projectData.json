@@ -1,0 +1,66 @@
+[
+{
+"id": 1,
+"title": "African Researchers Network_UK (ARN) ",
+"description": "A Website designed to serve as an academic hub for African and non-african researchers across various stages of their career. It features online streaming channel, a chatroom, a digital library, and a journal platform.",
+"image": "https://live.staticflickr.com/65535/52729053392_a535107f12_z.jpg",
+"demoLink": "https://www.africanresearchersnetwork.co.uk/",
+"codeLink": "https://github.com/example/project1"
+},
+{
+"id": 2,
+"title": "Paint Me Black",
+"description": "A Digital Humanities project that highlights the rationality and aesthetics of salients aspects of African Arts",
+"image": "https://live.staticflickr.com/65535/52730058158_ef708681b9_z.jpg",
+"demoLink": "https://www.paintmeblack.com/",
+"codeLink": "https://github.com/example/project2"
+},
+{
+"id": 3,
+"title": "EvaReady2Dazzle",
+"description": "An online store specifically for selling and buying cloths, shoes, and jewelries.",
+"image": "https://live.staticflickr.com/65535/52729577596_b51650c973_z.jpg",
+"demoLink": "https://www.evaready2dazzle.co.uk/",
+"codeLink": "https://github.com/example/project1"
+},
+{
+"id": 4,
+"title": "Philosophers Association of Nigeria",
+"description": "A website designed for the national association of philosophers in Nigeria in order to provide information, simplify membership registration, and enhance conference publication process.",
+"image": "https://live.staticflickr.com/65535/52729827954_f07e4166f9_z.jpg",
+"demoLink": "https://www.pan-edu.org/",
+"codeLink": "https://github.com/example/project2"
+},
+{
+"id": 5,
+"title": "FSV Multimedia ltd",
+"description": "A web portal designed for a computer training institute in order to provide learning resources for their students and provide information for prospective applicants.",
+"image": "https://live.staticflickr.com/65535/52729053292_274cc7a95e_z.jpg",
+"demoLink": "https://fsvmultimedialtd.com/",
+"codeLink": "https://github.com/example/project1"
+},
+{
+"id": 6,
+"title": "Afro Think It Right",
+"description": "A digital gallery of African Great Thinkers - displaying their pictures, publications, countries and achievements.",
+"image": "https://live.staticflickr.com/65535/52730058183_1acbbd1f84_z.jpg",
+"demoLink": "http://www.afrothinkitright.com/",
+"codeLink": "https://github.com/example/project2"
+},
+{
+"id": 7,
+"title": "African Digital Humanities",
+"description": "A collection of links and references to articles and books on Digital humanities scholarship, practices, projects and institutions in Africa. It also showcase multimedia resources on thematic issues that address the epistemic and ontological reality of Africans.",
+"image": "https://live.staticflickr.com/65535/52729577536_b00711c0c5_z.jpg",
+"demoLink": "http://africandigitalhumanities.co.uk/",
+"codeLink": "https://github.com/example/project1"
+},
+{
+"id": 8,
+"title": "African Philosophers Online",
+"description": "An Archive of names, publications and ideas promoted by numerous unknown and rarely mentioned Philosophers in Africa.",
+"image": "https://live.staticflickr.com/65535/52730058173_01ceec247f_z.jpg",
+"demoLink": "http://africanphilosophers.online/",
+"codeLink": "https://github.com/example/project2"
+}
+]
