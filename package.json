@@ -31,7 +31,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": {"https://sagaust.github.io/MyReactPortfolio/"},
+  "homepage": "https://sagaust.github.io/MyReactPortfolio/",
   "browserslist": {
     "production": [
       ">0.2%",
