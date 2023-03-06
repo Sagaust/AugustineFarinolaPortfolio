@@ -1,47 +1,65 @@
-import React, { Component } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import './About.css';
-import EducationItem from './EducationItem';
-import ExperienceItem from './ExperienceItem';
+import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
-class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      education: [
-        { id: 1, institution: 'Example University', degree: 'Bachelor of Science', fieldOfStudy: 'Computer Science', startYear: '2015', endYear: '2019', achievements: ['Dean\'s List'] },
-        { id: 2, institution: 'Another University', degree: 'Master of Business Administration', fieldOfStudy: 'Business', startYear: '2019', endYear: '2021', achievements: ['Graduated with honors'] }
-      ],
-      experience: [
-        { id: 1, company: 'Example Company', position: 'Software Engineer', startDate: '2019-01-01', endDate: '2022-02-28', description: 'Developed and maintained web applications using React.js and Node.js.' },
-        { id: 2, company: 'Another Company', position: 'Business Analyst', startDate: '2017-06-01', endDate: '2018-12-31', description: 'Analyzed and optimized business processes using data-driven approaches.' }
-      ]
-    };
-  }
-
+class About extends React.Component {
   render() {
     return (
-      <div className="about">
-        <Container>
-          <Row>
-            <Col md={4} className="d-flex justify-content-center align-items-center">
-              <Image src={this.props.image} alt="Profile picture" className="profile-picture" roundedCircle />
-            </Col>
-            <Col md={8}>
-              <h1>{this.props.name}</h1>
-              <h3>{this.props.jobTitle}</h3>
-              <hr />
-              <p>{this.props.bio}</p>
-              <hr />
-              <h4>Education</h4>
-              {this.state.education.map(edu => <EducationItem key={edu.id} education={edu} />)}
-              <hr />
-              <h4>Work Experience</h4>
-              {this.state.experience.map(exp => <ExperienceItem key={exp.id} experience={exp} />)}
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Container>
+        <Row className="justify-content-center">
+          <Col md={4}>
+            <Image src="avatar.png" alt="John Doe" roundedCircle fluid />
+          </Col>
+          <Col md={8}>
+            <h1>Welcome to my portfolio!</h1>
+            <h2>About Me</h2>
+            <p>
+              Hi, I'm John Doe, a full-stack web developer with 5 years of
+              experience. I specialize in building responsive web applications
+              using React, Node.js, and MongoDB. I also have experience with
+              Python and Django framework.
+            </p>
+          </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col md={6}>
+            <h2>Skills</h2>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>Python</li>
+            </ul>
+          </Col>
+          <Col md={6}>
+            <h2>Education & Work Experience</h2>
+            <p>
+              <strong>Bachelor's Degree in Computer Science</strong>
+              <br />
+              XYZ University, 2015-2019
+            </p>
+            <p>
+              <strong>Web Developer at ABC Company, 2019-Present</strong>
+              <br />
+              Developed and maintained web applications using React and
+              Node.js.
+            </p>
+          </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col md={12}>
+            <h2>Interests</h2>
+            <ul>
+              <li>Traveling</li>
+              <li>Reading</li>
+              <li>Hiking</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

@@ -1,0 +1,100 @@
+/* Define the color scheme */
+:root {
+    --primary-color: #007bff;
+    /* blue */
+    --secondary-color: #6c757d;
+    /* gray */
+    --success-color: #28a745;
+    /* green */
+    --danger-color: #dc3545;
+    /* red */
+    --warning-color: #ffc107;
+    /* yellow */
+}
+
+/* Apply the color scheme to different elements */
+body {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    color: var(--primary-color);
+}
+
+hr {
+    border-color: var(--primary-color);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: var(--secondary-color);
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.col {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.col h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.col ul li:before {
+    content: "\2022";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.col ul li {
+    margin-bottom: 10px;
+}
+
+.col ul li:last-child {
+    margin-bottom: 0;
+}
+
+.col ul li strong {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.col ul li em {
+    font-style: italic;
+}
+
+.col ul li a {
+    color: var(--primary-color);
+}
+
+.col ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+}
