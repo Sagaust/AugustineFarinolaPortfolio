@@ -1,9 +1,12 @@
 import React from "react";
-import { Container, Row, Col, Image, Card, ListGroup } from "react-bootstrap";
+import {Container, Row, Col, Image, Card, ListGroup } from "react-bootstrap";
+import Layout from '../components/Layout';
+
 
 class About extends React.Component {
 render() {
 return (
+<Layout>
 <Container>
 <Row className="align-items-center">
 <Col md={4} className="text-center mb-4">
@@ -70,8 +73,8 @@ Node.js.
 </Card>
 </Col>
 </Row>
-
 </Container>
+</Layout>
 );
 }
 }
