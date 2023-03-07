@@ -1,74 +1,26 @@
 import React from 'react';
-import { Navbar, Nav, Jumbotron, Container, Row, Col } from 'react-bootstrap';
+import {  Button  } from 'react-bootstrap';
+import Jumbotron from 'react-bootstrap/Card';
+
+function Wrapper(props) {
+  return <main className="wrapper">{props.children}</main>;
+}
+
 
 function Header() {
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="md">
-        <Navbar.Brand href="#home">Your Name</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-
-      <Jumbotron fluid className="mb-0">
-        <Container>
-          <Row className="justify-content-center">
-            <Col md={8}>
-              <h1>Hello, I'm Your Name</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                tempor tellus id sapien rutrum, ut mollis magna fringilla.
-                Suspendisse ut sapien vel velit elementum bibendum. Sed vel
-                dui vel neque dapibus eleifend.
-              </p>
-            </Col>
-          </Row>
-          <Row className="justify-content-center">
-            <Col md={2} className="text-center">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-linkedin fa-2x"></i>
-              </a>
-            </Col>
-            <Col md={2} className="text-center">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-github fa-2x"></i>
-              </a>
-            </Col>
-            <Col md={2} className="text-center">
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-youtube fa-2x"></i>
-              </a>
-            </Col>
-            <Col md={2} className="text-center">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-twitter fa-2x"></i>
-              </a>
-            </Col>
-          </Row>
-        </Container>
-      </Jumbotron>
+      <Wrapper />
+    <Jumbotron style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/background-image.jpg'})` }}>
+      <div className="overlay"></div>
+      <div className="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am a skilled front-end web developer with expertise in React, Node.js, and MongoDB. With 9 years of experience in multimedia management, ICT training coordination, IT consulting, and WordPress web management, I have a proven track record in website maintenance, online platform creation, multimedia presentation design, research material provision, and e-learning tool development.</p>
+        <p>
+          <Button variant="primary" href="/projects" role="button">View Projects</Button>
+        </p>
+      </div>
+    </Jumbotron>
     </header>
   );
 }

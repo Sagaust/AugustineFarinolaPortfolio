@@ -7,14 +7,16 @@ import Contact from './pages/Contact';
 import Testimonials from './pages/Testimonials';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Wrapper from './components/Wrapper';
+import Header from './pages/Header';
+
+
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        <Wrapper>
+        <Header />
           <Routes>
             <Route path="/" element={<About/>} />
             <Route path="/about" element={<About/>} />
@@ -23,7 +25,6 @@ function App() {
             <Route path="/skill" element={<Skill/>} />
             <Route path="/testimonials" element={<Testimonials/>} />
           </Routes>
-        </Wrapper>
         <Footer />
       </div>
     </Router>
