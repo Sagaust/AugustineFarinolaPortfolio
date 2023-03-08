@@ -1,5 +1,5 @@
 import React from 'react';
-import Jumbo from './jumbotron';
+
 
 
 function Wrapper(props) {
@@ -11,7 +11,6 @@ function Header() {
   return (
     <header>
    <Wrapper /> 
-   <Jumbo />
     
     </header>
   );
