@@ -1,12 +1,10 @@
 import React from "react";
 import {Container, Row, Col, Image, Card, ListGroup } from "react-bootstrap";
-import Layout from '../components/Layout';
 
 
-class About extends React.Component {
+class Home extends React.Component {
 render() {
 return (
-<Layout>
 <Container>
 <Row className="align-items-center">
 <Col md={4} className="text-center mb-4">
@@ -74,9 +72,8 @@ Node.js.
 </Col>
 </Row>
 </Container>
-</Layout>
 );
 }
 }
 
-export default About;
+export default Home;
