@@ -5,7 +5,7 @@ import Skill from './pages/Skill';
 import Contact from './pages/Contact';
 import Testimonials from './pages/Testimonials';
 import Home from './pages/Home';
-import NavBar from '../src/components/NavBar'
+import NavBar from './components/NavBar'
 import ArticlesListPage from './pages/ArticlesListPage';
 import ArticlePage from './pages/ArticlePage';
 
