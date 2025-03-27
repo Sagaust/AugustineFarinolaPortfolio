@@ -1,0 +1,21 @@
+/* src/components/ProjectItem.module.css */
+.projectCard {
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projectCard img {
+  height: 200px;
+  object-fit: cover;
+}
