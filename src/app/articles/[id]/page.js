@@ -1,50 +1,43 @@
+// src/app/articles/[id]/page.js
+'use client';
 
-// import React from "react";
-// import { Container, Card } from "react-bootstrap";
-// import { useParams } from "react-router-dom";
-// // import blogsContent from "./blogsContent";
-
-// const Blogs = () => {
-//   const { blogsContent } = useParams();
-//   const blog = blogsContent.find((blog) => blogsContent.id === parseInt(blogsContent.id ));
-
-//   return (
-//     <Container className="my-5">
-//       <Card>
-//         <Card.Img variant="top" src={blogsContent.image} />
-//         <Card.Body>
-//           <Card.Title>{blogsContent.title}</Card.Title>
-//           <Card.Subtitle className="mb-2 text-muted">{blog.date}</Card.Subtitle>
-//           <Card.Text>{blogsContent.content}</Card.Text>
-//         </Card.Body>
-//         <Card.Footer>
-//           <small className="text-muted">{blogsContent.publisher}</small>
-//           <a href={blogsContent.links} className="btn btn-primary float-end">
-//             Read More
-//           </a>
-//         </Card.Footer>
-//       </Card>
-//     </Container>
-//   );
-// };
-
-// export default Blogs;
 import React from "react";
-import { useParams } from 'react-router-dom';
-import articles from './article-content';
+import { Container, Card } from "react-bootstrap";
+import articles from '../article-content';
 
-const ArticlePage = () => {
-    const { articleId } = useParams();
-    const article = articles.find(article => article.name === articleId);
+// Using Next.js dynamic routing
+export default function ArticlePage({ params }) {
+  const article = articles.find(article => article.name === params.id);
 
-    return (
-        <>
-        <h1>{article.title}</h1>
-        {article.content.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-        ))}
-        </>
-    );
+  if (!article) {
+    return <div>Article not found</div>;
+  }
+
+  return (
+    <Container className="my-5">
+      <Card>
+        {article.image && (
+          <Card.Img variant="top" src={article.image} />
+        )}
+        <Card.Body>
+          <Card.Title>{article.title}</Card.Title>
+          {article.content.map((paragraph, i) => (
+            <Card.Text key={i}>{paragraph}</Card.Text>
+          ))}
+        </Card.Body>
+        {(article.publisher || article.links) && (
+          <Card.Footer>
+            {article.publisher && (
+              <small className="text-muted">{article.publisher}</small>
+            )}
+            {article.links && (
+              <a href={article.links} className="btn btn-primary float-end">
+                Read More
+              </a>
+            )}
+          </Card.Footer>
+        )}
+      </Card>
+    </Container>
+  );
 }
-
-export default ArticlePage;

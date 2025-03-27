@@ -1,7 +1,8 @@
+
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import { NavBar, Footer } from '../components'
+
 
 export const metadata = {
   title: 'Augustine Portfolio',
