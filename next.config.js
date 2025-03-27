@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Remove the output: 'export' configuration
   images: {
-    unoptimized: true,
     domains: ['live.staticflickr.com']
-  },
-  trailingSlash: true,
+  }
 }
 
 module.exports = nextConfig
