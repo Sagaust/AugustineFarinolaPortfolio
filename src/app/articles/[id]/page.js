@@ -1,11 +1,14 @@
 // src/app/articles/[id]/page.js
-'use client';
-
 import React from "react";
-import { Container, Card } from "react-bootstrap";
 import articles from '../article-content';
+import ArticleContent from './ArticleContent';
 
-// Using Next.js dynamic routing
+export async function generateStaticParams() {
+  return articles.map((article) => ({
+    id: article.name,
+  }));
+}
+
 export default function ArticlePage({ params }) {
   const article = articles.find(article => article.name === params.id);
 
@@ -13,6 +16,15 @@ export default function ArticlePage({ params }) {
     return <div>Article not found</div>;
   }
 
+  return <ArticleContent article={article} />;
+}
+
+// src/app/articles/[id]/ArticleContent.js
+'use client';
+
+import { Container, Card } from "react-bootstrap";
+
+export default function ArticleContent({ article }) {
   return (
     <Container className="my-5">
       <Card>
