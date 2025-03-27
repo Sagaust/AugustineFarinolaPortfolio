@@ -1,4 +1,3 @@
-// src/app/articles/[id]/page.js
 import React from 'react';
 import articles from '../article-content';
 import ArticleContent from './ArticleContent';
