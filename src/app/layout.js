@@ -1,5 +1,5 @@
 
-import './globals.css'
+import '..styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { NavBar, Footer } from '../components'
 
