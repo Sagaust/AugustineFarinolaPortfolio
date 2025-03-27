@@ -1,8 +1,7 @@
-import './styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const metadata = {
-  title: 'My Portfolio',
+  title: 'Augustine Portfolio',
   description: 'Welcome to my portfolio website',
 }
 
