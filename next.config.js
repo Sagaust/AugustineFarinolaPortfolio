@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // This enables static exports
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
     domains: ['live.staticflickr.com']
   },
-  trailingSlash: true, // This helps with static exports
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

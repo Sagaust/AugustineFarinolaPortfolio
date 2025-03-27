@@ -1,4 +1,6 @@
+// src/app/articles/article-content.js
 const articles = [
+
     {
       name: 'web-development-trends',
       title: 'Latest Web Development Trends in 2024',
