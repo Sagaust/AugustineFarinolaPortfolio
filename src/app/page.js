@@ -1,5 +1,5 @@
 // src/app/page.js
-'use client'; // Add this because we're using React-Bootstrap client-side components
+'use client';
 
 import { Container, Row, Col, Image, Card, ListGroup } from "react-bootstrap";
 
@@ -52,7 +52,7 @@ export default function Home() {
             </Card.Header>
             <Card.Body>
               <Card.Text>
-                <strong>Bachelor's Degree in Computer Science</strong>
+                <strong>Bachelor&apos;s Degree in Computer Science</strong>
                 <br />
                 XYZ University, 2015-2019
               </Card.Text>
