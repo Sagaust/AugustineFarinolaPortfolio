@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    images: {
-      domains: ['live.staticflickr.com'],
-    },
-  }
+  output: 'export',  // This enables static exports
+  images: {
+    unoptimized: true, // Required for static export
+    domains: ['live.staticflickr.com']
+  },
+  trailingSlash: true, // This helps with static exports
+}
 
-  module.exports = nextConfig
+module.exports = nextConfig
