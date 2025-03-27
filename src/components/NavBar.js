@@ -1,83 +1,44 @@
+// src/components/NavBar.js
+'use client';
+
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import './NavBar.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import Link from 'next/link';
+import styles from './NavBar.module.css'; // We'll create this
 
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
+const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand">
-        Augustine Farinola
-      </Link>
-      <div>
-        <ul className="navbar-nav">
-         <li className="nav-item">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Home
-            </NavLink>
-          </li>    
-          <li className="nav-item">
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Projects
-            </NavLink>
-          </li>
-            <li className="nav-item">
-            <NavLink
-              to="/Skill"
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Skill
-            </NavLink>
-          </li>           
-           
-          <li className="nav-item">
-            <NavLink
-              to="/ArticlePage"
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Blogs
-            </NavLink>
-          </li>  
-
-          <li className="nav-item">
-            <NavLink
-              to="/Contact"
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Contact
-            </NavLink>
-          </li>
-            <li className="nav-item">
-            <NavLink
-              to="/testimonials"
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Testimonials
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg" className={styles.navbar}>
+      <Container>
+        <Link href="/" passHref legacyBehavior>
+          <Navbar.Brand>Augustine Portfolio</Navbar.Brand>
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Link href="/" passHref legacyBehavior>
+              <Nav.Link>Home</Nav.Link>
+            </Link>
+            <Link href="/projects" passHref legacyBehavior>
+              <Nav.Link>Projects</Nav.Link>
+            </Link>
+            <Link href="/skills" passHref legacyBehavior>
+              <Nav.Link>Skills</Nav.Link>
+            </Link>
+            <Link href="/articles" passHref legacyBehavior>
+              <Nav.Link>Articles</Nav.Link>
+            </Link>
+            <Link href="/testimonials" passHref legacyBehavior>
+              <Nav.Link>Testimonials</Nav.Link>
+            </Link>
+            <Link href="/contact" passHref legacyBehavior>
+              <Nav.Link>Contact</Nav.Link>
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-}
+};
 
-export default Navbar;
+export default NavBar;

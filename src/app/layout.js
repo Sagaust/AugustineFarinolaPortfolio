@@ -1,8 +1,6 @@
-
-import './styles/globals.css'
+// src/app/layout.js
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { NavBar, Footer } from '../components'
-
+import NavBar from '@/components/NavBar'
 
 export const metadata = {
   title: 'Augustine Portfolio',
@@ -14,8 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <NavBar />
-        {children}
-        <Footer />
+        <main>{children}</main>
       </body>
     </html>
   )

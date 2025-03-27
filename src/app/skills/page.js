@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import '../styles/skill.css';
+import '../styles/Skill.css';
 
 const Skill = () => {
   return (

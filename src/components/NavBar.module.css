@@ -1,0 +1,14 @@
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .navbar a:hover {
+    color: #007bff;
+  }
