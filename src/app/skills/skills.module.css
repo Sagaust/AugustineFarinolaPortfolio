@@ -1,0 +1,27 @@
+/* src/app/skills/skills.module.css */
+.skillsContainer {
+    padding: 2rem 0;
+  }
+  
+  .skillsContainer h3 {
+    color: #333;
+    margin: 2rem 0 1rem;
+  }
+  
+  .skillsContainer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .skillsContainer li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .skillsContainer li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+  }

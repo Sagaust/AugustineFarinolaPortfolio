@@ -1,25 +1,21 @@
+// src/app/skills/page.js
+'use client';
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import '../styles/Skill.css';
+import styles from './skills.module.css';
 
 const Skill = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h2>Skills</h2>
-          <hr />
-        </Col>
-      </Row>
-
+    <Container className={styles.skillsContainer}>
       <Row>
         <Col>
           <h3>Leadership skills:</h3>
-         <ul>
+          <ul>
             <li>I am experienced in managing teams of developers, ensuring that everyone is working effectively and efficiently toward a common goal.</li>
             <li>I possess excellent delegation skills, allowing me to assign tasks to team members based on their strengths and skill sets.</li>
             <li>I am skilled in motivating team members, providing positive feedback and constructive criticism to ensure that everyone is working at their best.</li>
-            <li>I am experienced in setting realistic goals for projects and for individual team members, ensuring that everyone knows what is expected of them and how they can contribute to the project's success.</li>
+            <li>I am experienced in setting realistic goals for projects and for individual team members, ensuring that everyone knows what is expected of them and how they can contribute to the project&apos;s success.</li>
             <li>I am skilled in making difficult decisions quickly and effectively, weighing all factors carefully and communicating my decisions clearly to team members.</li>
           </ul>
         </Col>
@@ -27,7 +23,7 @@ const Skill = () => {
       <Row>
         <Col>
           <h3>Verbal Communication skills</h3>
-                   <ul>
+          <ul>
             <li>I am an effective verbal communicator and can convey technical information in a clear and concise manner.</li>
             <li>I am skilled in active listening, allowing me to understand the needs of clients and team members and respond appropriately.</li>
             <li>I am experienced in giving presentations and can explain technical information to non-technical audiences in a clear and engaging manner.</li>
@@ -38,24 +34,10 @@ const Skill = () => {
           </ul>
         </Col>
       </Row>
-     <Row>
-        <Col>
-          <h3>Verbal Communication skills</h3>
-                   <ul>
-            <li>I am an effective verbal communicator and can convey technical information in a clear and concise manner.</li>
-            <li>I am skilled in active listening, allowing me to understand the needs of clients and team members and respond appropriately.</li>
-            <li>I am experienced in giving presentations and can explain technical information to non-technical audiences in a clear and engaging manner.</li>
-            <li>I possess excellent collaboration skills and can work effectively with designers, back-end developers, and project managers to ensure that projects run smoothly.</li>
-            <li>I am skilled in giving and receiving feedback, providing constructive criticism to team members and accepting feedback in a professional manner.</li>
-            <li>I am able to use verbal communication to identify and resolve issues in my work, working collaboratively with team members to find solutions.</li>
-            <li>I am able to adapt my verbal communication style to suit the needs of different audiences, whether they are technical or non-technical.</li>
-          </ul>
-        </Col>
-      </Row>
-       <Row>
+      <Row>
         <Col>
           <h3>Written Communication skills</h3>
-                   <ul>
+          <ul>
             <li>I am an effective verbal communicator and can convey technical information in a clear and concise manner.</li>
             <li>I am skilled in active listening, allowing me to understand the needs of clients and team members and respond appropriately.</li>
             <li>I am experienced in giving presentations and can explain technical information to non-technical audiences in a clear and engaging manner.</li>
@@ -83,7 +65,7 @@ const Skill = () => {
       <Row>
         <Col>
           <h3>Negotiation Skills</h3>
-<ul>
+          <ul>
             <li>
               I have strong negotiation skills and can effectively communicate
               with clients to understand their needs and negotiate changes to
@@ -91,7 +73,7 @@ const Skill = () => {
             </li>
             <li>
               I understand that negotiation often involves compromise, and I am
-              willing to find solutions that meet both the client's needs and my
+              willing to find solutions that meet both the client&apos;s needs and my
               own technical requirements.
             </li>
             <li>
@@ -101,7 +83,7 @@ const Skill = () => {
             </li>
             <li>
               I am skilled in managing client expectations and can balance the
-              project's technical requirements with the client's budgetary
+              project&apos;s technical requirements with the client&apos;s budgetary
               constraints.
             </li>
             <li>
@@ -122,8 +104,7 @@ const Skill = () => {
           </ul>
         </Col>
       </Row>
-      </Container>
-  
+    </Container>
   );
 };
 
