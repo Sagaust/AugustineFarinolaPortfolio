@@ -8,18 +8,7 @@ import styles from './skills.module.css';
 const Skill = () => {
   return (
     <Container className={styles.skillsContainer}>
-      <Row>
-        <Col>
-          <h3>Leadership skills:</h3>
-          <ul>
-            <li>I am experienced in managing teams of developers, ensuring that everyone is working effectively and efficiently toward a common goal.</li>
-            <li>I possess excellent delegation skills, allowing me to assign tasks to team members based on their strengths and skill sets.</li>
-            <li>I am skilled in motivating team members, providing positive feedback and constructive criticism to ensure that everyone is working at their best.</li>
-            <li>I am experienced in setting realistic goals for projects and for individual team members, ensuring that everyone knows what is expected of them and how they can contribute to the project&apos;s success.</li>
-            <li>I am skilled in making difficult decisions quickly and effectively, weighing all factors carefully and communicating my decisions clearly to team members.</li>
-          </ul>
-        </Col>
-      </Row>
+
       <Row>
         <Col>
           <h3>Verbal Communication skills</h3>
