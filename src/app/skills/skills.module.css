@@ -1,27 +1,91 @@
-/* src/app/skills/skills.module.css */
 .skillsContainer {
-    padding: 2rem 0;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+form {
+  background: #f9fafb;
+  border-left: 6px solid #0d6efd;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0d6efd;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.row {
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.fw-bold {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.6;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.small-text:hover {
+  background-color: #f1f3f5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .skillsContainer h3 {
-    color: #333;
-    margin: 2rem 0 1rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .skillsContainer ul {
-    list-style-type: none;
-    padding-left: 0;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
   }
-  
-  .skillsContainer li {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
+
+  .fw-bold {
+    margin-bottom: 0.25rem;
   }
-  
-  .skillsContainer li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #007bff;
+
+  .small-text {
+    padding: 0.6rem 0.8rem;
   }
+}

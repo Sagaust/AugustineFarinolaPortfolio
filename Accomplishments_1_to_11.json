@@ -1,0 +1,43 @@
+[
+  {
+    "accomplishment_id": "1",
+    "details": [
+      {
+        "section": "Date",
+        "content": "September 2024 - July 2025"
+      },
+      {
+        "section": "Position",
+        "content": "Graduate Research Assistant, University of Alberta"
+      },
+      {
+        "section": "Achievement",
+        "content": "Conducted quantitative and qualitative analyses of Canadian immigration experiences using advanced digital technology (textual analysis of YouTube comments corpus)."
+      },
+      {
+        "section": "Situation",
+        "content": "The research team needed a comprehensive, scalable way to analyze large amounts of unstructured textual data to understand immigrants' experiences in Canada from social media platforms."
+      },
+      {
+        "section": "Task",
+        "content": "My responsibility was to explore suitable computational techniques, implement robust analysis methodologies, and draw insightful conclusions from complex data."
+      },
+      {
+        "section": "Actions",
+        "content": "Reviewed and selected appropriate digital analysis tools (Voyant, Spyral); Created a structured analytical pipeline for data processing; Conducted qualitative content analysis and statistical evaluations; Documented the insights clearly for dissemination in academic contexts."
+      },
+      {
+        "section": "Results",
+        "content": "Successfully analyzed thousands of YouTube comments, identifying key themes and sentiment trends among immigrants; Enhanced accuracy and depth of immigration-related insights significantly; Improved research efficiency, reducing manual analytical workload by approximately 40%."
+      },
+      {
+        "section": "Hard Skills",
+        "content": "Computational text analysis; Quantitative data analysis; Qualitative content analysis; Statistical software usage (Voyant, Spyral); Digital humanities methodologies"
+      },
+      {
+        "section": "Soft Skills",
+        "content": "Analytical thinking; Problem-solving; Effective communication; Team collaboration; Project management"
+      }
+    ]
+  }
+]
