@@ -16,15 +16,29 @@ export default function Home() {
           />
         </Col>
         <Col md>
-          <h1>Welcome to my portfolio!</h1>
+          <h1>Augustine Akintunde Farinola</h1>
+          <h2>Doctoral Student in Philosophy &amp; Digital Humanities · AI Ethics · Corpus-Based Text Analysis</h2>
+          <p>
+            I am a Doctoral Student and Graduate Research Assistant in the Department of Philosophy at the University of Alberta.
+            My work sits at the intersection of artificial intelligence ethics, digital humanities, and corpus-based experimental philosophy,
+            with a particular focus on how computational tools and large language models shape our understanding of texts, agency, and social reality.
+          </p>
           <h2>About Me</h2>
           <p>
-            With 9 years of experience in multimedia management, ICT training coordination, 
-            IT consulting, and WordPress web management, I am a skilled front-end web developer. 
-            I have a proven track record in website maintenance, online platform creation, 
-            multimedia presentation design, research material provision, and e-learning tool development. 
-            My diverse expertise allows me to adapt to various project requirements, 
-            showcasing my versatility as a capable front-end web developer.
+            I am a philosophy and digital humanities researcher with a background in applied ethics, communication, and computational methods.
+            I am currently a Doctoral Student and Graduate Research Assistant in the Department of Philosophy at the University of Alberta,
+            where I work with the Voyant Consortium on advanced text analysis tools such as Voyant and Spyral Notebooks.
+          </p>
+          <p>
+            My research explores how artificial intelligence systems and digital research tools mediate human understanding.
+            I draw on hermeneutics, postphenomenology, and experimental philosophy to study how large language models, corpus analysis,
+            and data-driven methods influence concepts like intelligence, perception, embodiment, and objectivity.
+          </p>
+          <p>
+            Over the past several years I have combined philosophical inquiry with practical technical skills: text mining in Python and R,
+            corpus-based analysis, survey design, and data visualisation.
+            I have published on AI, digital humanities, and indigenous communication models in venues such as <em>Digital Scholarship in the Humanities</em>,
+            the <em>International Journal of Humanities and Arts Computing</em>, and a Palgrave Macmillan volume on ethics and subjectivity.
           </p>
         </Col>
       </Row>

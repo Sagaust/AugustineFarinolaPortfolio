@@ -20,13 +20,13 @@ const NavBar = () => {
               <Nav.Link>Home</Nav.Link>
             </Link>
             <Link href="/projects" passHref legacyBehavior>
-              <Nav.Link>Projects</Nav.Link>
+              <Nav.Link>Research &amp; Projects</Nav.Link>
             </Link>
             <Link href="/skills" passHref legacyBehavior>
               <Nav.Link>Skills</Nav.Link>
             </Link>
             <Link href="/articles" passHref legacyBehavior>
-              <Nav.Link>Articles</Nav.Link>
+              <Nav.Link>Publications</Nav.Link>
             </Link>
             <Link href="/testimonials" passHref legacyBehavior>
               <Nav.Link>Testimonials</Nav.Link>
