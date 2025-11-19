@@ -17,16 +17,21 @@ const Skill = () => {
 
   return (
     <Container className={styles.skillsContainer}>
-      <h2 className="my-4 text-center">Accomplishment Portfolio</h2>
+      <h2 className={`${styles.heading} my-4 text-center`}>Accomplishment Portfolio</h2>
       {accomplishments.map((acc) => (
-        <Form key={acc.accomplishment_id} className="p-4 border rounded mb-5 bg-light shadow-sm">
+        <Form
+          key={acc.accomplishment_id}
+          className={`${styles.formCard} p-4 border rounded mb-5 bg-light shadow-sm`}
+        >
           {acc.details.map((entry, idx) => (
-            <Row className="mb-3" key={idx}>
-              <Col md={3} className="fw-bold">
+            <Row className={`${styles.rowAligned} mb-3`} key={idx}>
+              <Col md={3} className={styles.label}>
                 {entry.section}
               </Col>
               <Col md={9}>
-                <div className="border p-2 bg-white rounded small-text">{entry.content}</div>
+                <div className={`${styles.smallText} border p-2 bg-white rounded`}>
+                  {entry.content}
+                </div>
               </Col>
             </Row>
           ))}
